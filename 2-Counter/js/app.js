@@ -3,8 +3,12 @@ let count = 0;
 
 const value = document.querySelector("#value")
 const btns = document.querySelectorAll(".btn")
+const h1 = document.querySelector("h1")
 
 btns.forEach(function (btn) {
+    value.style.color = "black"
+    h1.style.color = "black"
+
     btn.addEventListener("click", (e) => {
         const styles = e.currentTarget.classList
         if (styles.contains("decrease")) {
